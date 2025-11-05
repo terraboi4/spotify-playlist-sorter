@@ -1,19 +1,47 @@
-# Playlist Sorter
+# Spotify Playlist Sorter
 
-## What it does
+Sort your Spotify playlists by BPM to create better playlists for the Spotify Mix feature, or just organize your music.
 
-- Takes a Spotify playlist and sorts it by BPM, genre, or energy level
+## Features
 
-## Done when:
+- Fetch any public Spotify playlist
+- Display BPM (tempo) for each track
+- Sort playlist by BPM (low to high)
+- Clean, responsive interface
 
-- [ ] Can input Spotify playlist URL
-- [ ] Fetches song data from Spotify API
-- [ ] Displays playlist sorted by user-chosen metric
-- [ ] Deployed and usable
+## Tech Stack
 
-## Additional features (post v1 ship)
+- Next.js 16
+- TypeScript
+- Spotify API
+- Tailwind CSS
 
-- [ ] Use cluster algorithm to sort songs into "clouds"
+## How to Use
 
-Started: Nov 3, 2025
-V1 Ship date: Nov 6, 2025
+1. Copy a Spotify playlist link
+2. Paste it into the input field
+3. Click Submit to load the playlist
+4. Click Sort to reorder by BPM
+
+## Setup (for developers)
+
+1. Clone the repo
+2. `npm install`
+3. Create `.env.local` with:
+   - `NEXT_PUBLIC_CLIENT_ID=your_spotify_client_id`
+   - `NEXT_PUBLIC_CLIENT_SECRET=your_spotify_client_secret`
+4. `npm run dev`
+
+## Future Ideas
+
+- Sort by other audio features (energy, danceability)
+- Reverse sort option
+- Save sorted playlist back to Spotify
+- Visualize playlist as "clouds" grouped by similar features
+
+## Built in 2 Days
+
+This was a 2-day challenge project to get back into coding after a 6-month break.
+
+**Day 1:** Spotify API integration, basic playlist display  
+**Day 2:** BPM fetching, sorting functionality, UI polish, shipped
